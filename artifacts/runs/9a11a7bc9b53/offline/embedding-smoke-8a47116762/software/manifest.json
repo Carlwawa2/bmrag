@@ -1,0 +1,100 @@
+{
+  "files": [
+    {
+      "path": "hgrag/__init__.py",
+      "sha256": "ecfecc2a2b35007ae69e7e1ffeb665500adbf38a60d6ec61a885552278dc6489"
+    },
+    {
+      "path": "hgrag/__main__.py",
+      "sha256": "d49e650c7f60ad48328404c9eea30e7ee3ec64277138185c2a402bd44daf6b94"
+    },
+    {
+      "path": "hgrag/common/__init__.py",
+      "sha256": "b45fa0f18e5d907ca11d76ec9866b1a1298f6d96dbdb377174239cebf027b525"
+    },
+    {
+      "path": "hgrag/common/files.py",
+      "sha256": "2301784786a8236c294826783449bfc274a05e0ab982e7c751294fa18617a673"
+    },
+    {
+      "path": "hgrag/common/provenance.py",
+      "sha256": "1c6888c45c7b1b91d15415318b579a0d367cbc3e9753ed4757107855df6befc1"
+    },
+    {
+      "path": "hgrag/configuration.py",
+      "sha256": "5c6fb3ac8a6e1da194823e484751b5fd5de66595472b0b5fae7db5c1a8fe5a4b"
+    },
+    {
+      "path": "hgrag/evaluation/__init__.py",
+      "sha256": "b954e9289e82e83bcc23b41728a10812b55c4e4403fa6268380b10a67f4410c9"
+    },
+    {
+      "path": "hgrag/evaluation/environment.py",
+      "sha256": "73a068ba0e79019898d1fd39de515deb28b1c2c2c4f23bcdd6fdf27a410984fb"
+    },
+    {
+      "path": "hgrag/evaluation/pilot.py",
+      "sha256": "e29097ddf93058277269301e395aaf1b8e6cbee9b1f114e395704404fb35ad6b"
+    },
+    {
+      "path": "hgrag/evaluation/records.py",
+      "sha256": "7e5ed0bfccbd822f30958528cbb7271edcda4d9342a967c9233d398429f3f14f"
+    },
+    {
+      "path": "hgrag/evaluation/replay.py",
+      "sha256": "a76f148af0e5c572ff1421ab6656bae783e110a8a7e444629d600afc3521d999"
+    },
+    {
+      "path": "hgrag/evaluation/review.py",
+      "sha256": "7e2b8230a3638bbd2d7b78d31d2b98cd3ffeb6efb9ace49ada4c9ddab8e7a779"
+    },
+    {
+      "path": "hgrag/evaluation/smoke.py",
+      "sha256": "d4bd5634842401b69d7e497a64b00e85202195ebcc43655d922d840f2ba7e003"
+    },
+    {
+      "path": "hgrag/methods/__init__.py",
+      "sha256": "47beb1914b4358f7ed29a8bc7a27a672510aa952f2e2985650e95e474ec4abfa"
+    },
+    {
+      "path": "hgrag/models/__init__.py",
+      "sha256": "df25e3334195eee3c2ca0868bf7c2d6134539163f49e0253f4b152f2f0a70b2d"
+    },
+    {
+      "path": "hgrag/models/bge_m3.py",
+      "sha256": "1cae1894293239b97bfc029c740cc33e3c6ea4e5d2e47e5ef5a8eff34ef72a6a"
+    },
+    {
+      "path": "hgrag/models/opencode.py",
+      "sha256": "364f5d786c2c838b1aee4afc3f42b6a323634cc4eacd2c3f659b1d049b8625e1"
+    },
+    {
+      "path": "hgrag/models/tokenizer.py",
+      "sha256": "ede3993b0f3aca765d099a852ed1d48978d578d734b622b6c52f97c2066a1597"
+    },
+    {
+      "path": "hgrag/runtime.py",
+      "sha256": "fecf0fe111577954c9b1ebd51c1f8490e0ffd1891f7b5c32ab1d4b71b1f8cf16"
+    },
+    {
+      "path": "hgrag/source.py",
+      "sha256": "f1afe739a3d9d7d94be7ac3b16f035e3a4c83183b30b89148be9d9899901a684"
+    },
+    {
+      "path": "hgrag/tools/__init__.py",
+      "sha256": "94607ec3f286b8a5815b1d3a244c91893fc389c38f904308f0613ea9f6ff9e54"
+    },
+    {
+      "path": "hgrag/tools/environment.py",
+      "sha256": "5adf9158d5d22e631519cf865dd89320fd8f2252dc8be116d63dc6e7dd3856c6"
+    },
+    {
+      "path": "hgrag/tools/models.py",
+      "sha256": "0b26ec650e18d98e82e8a314db15ebd8885299ce8c5a2e44f9710380f40b6460"
+    },
+    {
+      "path": "hgrag/tools/snapshot.py",
+      "sha256": "c6d6f4b2bc6478e053c91d867a579476f1571f9f6c1de6bce174647862ad36b7"
+    }
+  ]
+}

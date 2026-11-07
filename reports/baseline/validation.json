@@ -1,0 +1,23 @@
+{
+  "validated_at": "2026-11-07T16:59:27.423258+08:00",
+  "status": "passed",
+  "standalone_baseline": true,
+  "configuration": "configs/baseline.json",
+  "configuration_sha256": "9a11a7bc9b537758eecc188aa5fa3e4aca6894f030c557df4cc7e0cf66ca00bc",
+  "baseline_id": "hypergraphrag-luna-bge-m3-cpu",
+  "source_commit": "e01d2f2a5f3d1e80415b933c10fa7d14587cf811",
+  "generation_model": "gpt-6-luna",
+  "embedding_model": "BAAI/bge-m3",
+  "embedding_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "dependency_packages": 65,
+  "embedding_and_vector_storage": "passed",
+  "model_files_verified": 13,
+  "baseline_run": "artifacts/runs/pilot-001/pilot-summary.json",
+  "preserved_run_artifacts": 93,
+  "replayed_questions": 2,
+  "exact_model_requests": 4,
+  "live_llm_api_calls_during_validation": 0,
+  "formal_benchmark_evaluated": false,
+  "source_files_match_baseline_checkpoint": 24,
+  "rollback_record": "reports/baseline/rollback.json"
+}

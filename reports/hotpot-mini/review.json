@@ -1,0 +1,143 @@
+{
+  "reviewed_at": "2026-11-07T16:57:34.358772+08:00",
+  "run_summary": "artifacts/runs/pilot-001/pilot-summary.json",
+  "run_summary_sha256": "5a8f0a21cba471cf4d5684b4714b5e5a96de3a8495146c2ca82f811b3e44b0fe",
+  "review_script_sha256": "7e2b8230a3638bbd2d7b78d31d2b98cd3ffeb6efb9ace49ada4c9ddab8e7a779",
+  "pipeline_status": "passed",
+  "actual_context_matches_generation_request": true,
+  "saved_answers_match_provider_responses": true,
+  "evidence_files_verified": 93,
+  "run_artifact_checksums_verified": true,
+  "model_parameters_match_current_baseline": true,
+  "data_matches_indexed_documents": true,
+  "graph": {
+    "documents": 20,
+    "chunks": 20,
+    "entity_nodes": 377,
+    "hyperedge_nodes": 268,
+    "incidence_edges": 600,
+    "hyperedge_cardinality_histogram": {
+      "0": 4,
+      "1": 127,
+      "2": 57,
+      "3": 37,
+      "4": 16,
+      "5": 10,
+      "6": 10,
+      "7": 3,
+      "8": 2,
+      "13": 1,
+      "24": 1
+    },
+    "hyperedges_with_at_least_three_entities": 80,
+    "bipartite_incidence_valid": true,
+    "source_links_valid": true,
+    "vector_counts": {
+      "entities_vdb": 377,
+      "hyperedges_vdb": 268,
+      "chunks_vdb": 20
+    },
+    "build_seconds": 122.14891059999354,
+    "config_sha256": "bc3e47632086b05da99d92e5a6b81ddd9ce777bda49749916188536af3be9b35",
+    "corpus_manifest_sha256": "b11bce865189dd9606dff0767ee316035c75d19f08077aea1d584911c2b10582"
+  },
+  "empty_hyperedges": [
+    {
+      "name": "<hyperedge>\"Tyler Bates collaborated with James Gunn and scored every one of Gunn’s films.\"",
+      "source_titles": [
+        "Tyler Bates"
+      ]
+    },
+    {
+      "name": "<hyperedge>\"The position is called Karnam in Andhra Pradesh, Patnaik in Orissa, Adhikari in Tamil Nadu, and Talati in Karnataka, Gujarat, and Maharashtra.\"",
+      "source_titles": [
+        "Village accountant"
+      ]
+    },
+    {
+      "name": "<hyperedge>\"The position was called Kulkarni in Northern Karnataka and Maharashtra and Shanbogaru in South Karnataka.\"",
+      "source_titles": [
+        "Village accountant"
+      ]
+    },
+    {
+      "name": "<hyperedge>\"After airing on ABC, Corliss Archer finally returned to CBS.\"",
+      "source_titles": [
+        "Meet Corliss Archer"
+      ]
+    }
+  ],
+  "initial_extractions_missing_exact_completion_marker": [
+    {
+      "titles": [
+        "Sinister (film)"
+      ],
+      "completion_marker_exact": false,
+      "finish_reason": "stop"
+    },
+    {
+      "titles": [
+        "A Kiss for Corliss"
+      ],
+      "completion_marker_exact": false,
+      "finish_reason": "stop"
+    },
+    {
+      "titles": [
+        "Doctor Strange (2016 film)"
+      ],
+      "completion_marker_exact": false,
+      "finish_reason": "stop"
+    }
+  ],
+  "successful_response_models": {
+    "gpt-6-luna": 80
+  },
+  "finish_reasons": {
+    "stop": 80
+  },
+  "failed_attempts": [
+    {
+      "call_id": 18,
+      "attempt": 1,
+      "phase": "construction",
+      "question_id": null,
+      "kind": "extraction",
+      "started_at": "2026-11-05T17:51:26.657863+08:00",
+      "status": "failed",
+      "error": "API request failed: HTTP network; The read operation timed out",
+      "elapsed_seconds": 30.5971
+    }
+  ],
+  "supporting_sentences_present": 5,
+  "supporting_sentences_total": 5,
+  "queries": [
+    {
+      "id": "5a8b57f25542995d1e6f1371",
+      "answer": "Yes. Both Scott Derrickson and Ed Wood were American.",
+      "reference_phrase_present": true,
+      "support_titles_present": true,
+      "retained_source_count": 19,
+      "serialized_context_tokens": 10500,
+      "elapsed_seconds": 4.8522
+    },
+    {
+      "id": "5a8c7595554299585d9e36b6",
+      "answer": "Shirley Temple portrayed Corliss Archer in *Kiss and Tell*. As an adult, she served as **Chief of Protocol of the United States**.",
+      "reference_phrase_present": true,
+      "support_titles_present": true,
+      "retained_source_count": 19,
+      "serialized_context_tokens": 11502,
+      "elapsed_seconds": 6.7338
+    }
+  ],
+  "limitations": [
+    "Two preselected pilot questions; no official EM/F1, no formal benchmark claim",
+    "Twenty candidate paragraphs combined into one graph, beyond a single-question distractor corpus",
+    "Source inclusion in the actual prompt is verified; causal reliance on evidence is not established",
+    "Stored empty hyperedges and malformed completion markers retained as baseline observations",
+    "Section limits are not a serialized total-context hard budget; exploration budget not implemented",
+    "The provider alias is recorded; underlying model weights are not snapshot-pinned",
+    "Usage totals cover successful responses; the timed-out request returned no usage"
+  ]
+}

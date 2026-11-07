@@ -1,0 +1,125 @@
+{
+  "validated_at": "2026-11-05T19:17:08.954060+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": "passed",
+  "baseline_id": "hypergraphrag-luna-bge-m3-cpu",
+  "config_sha256": "9a11a7bc9b537758eecc188aa5fa3e4aca6894f030c557df4cc7e0cf66ca00bc",
+  "manifest_sha256": "a2647ce2ea2608b91dbb981d7f7bac8e76c4af9a11ac7cf6e2e56d31e6242601",
+  "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "python": "3.11.16",
+  "packages": {
+    "torch": "2.3.0+cpu",
+    "transformers": "4.44.2",
+    "numpy": "1.26.4",
+    "tiktoken": "0.14.0"
+  },
+  "encoding": {
+    "name": "BAAI/bge-m3",
+    "provider": "local",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "local_directory": "artifacts/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181",
+    "manifest": "models/bge-m3/manifest.json",
+    "manifest_sha256": "a84111ccd5adf26c171adad54a2101307c541b12c5970da1569977f787a264c5",
+    "dimensions": 1024,
+    "max_input_tokens": 8192,
+    "device": "cpu",
+    "dtype": "float32",
+    "pooling": "cls",
+    "normalize": true,
+    "batch_size": 1,
+    "cpu_threads": 4,
+    "attention_implementation": "eager",
+    "overflow_policy": "error",
+    "query_prefix": "",
+    "document_prefix": "",
+    "preserve_generated_vectors": true
+  },
+  "hardware": {
+    "cpu_logical": 24,
+    "cpu_physical": 16,
+    "memory_total_gib": 31.584
+  },
+  "timings": {
+    "model_load_seconds": 1.2901,
+    "six_short_inputs_seconds": 0.4657,
+    "long_chunks": [
+      {
+        "language": "English",
+        "upstream_declared_tokens": 1200,
+        "bge_tokens_including_special_tokens": 1557,
+        "elapsed_seconds": 3.9963
+      },
+      {
+        "language": "Chinese",
+        "upstream_declared_tokens": 1200,
+        "bge_tokens_including_special_tokens": 1008,
+        "elapsed_seconds": 2.0973
+      }
+    ],
+    "total_check_seconds": 10.9078
+  },
+  "memory": {
+    "rss_gib_at_end": 2.657,
+    "process_peak_rss_gib": 2.668
+  },
+  "checks": {
+    "shape_6_by_1024": true,
+    "dtype_float32": true,
+    "all_values_finite": true,
+    "unit_l2_norm": true,
+    "empty_batch": true,
+    "repeat_max_abs_difference": 0.0,
+    "oversized_input_rejected": true,
+    "oversized_test_tokens": 9003,
+    "no_silent_truncation": true,
+    "rag_factory": true,
+    "entity_vector_search": true,
+    "hyperedge_vector_search": true,
+    "chunk_vector_search": true,
+    "vector_persistence_and_reload": true,
+    "oversized_input_rejected_by_rag_callback": true,
+    "semaphore_released_after_error": true,
+    "concurrent_embedding_callers": true,
+    "directory": "D:\\step_1\\artifacts\\runs\\9a11a7bc9b53\\offline\\embedding-smoke-8a47116762",
+    "entity_query_result": [
+      {
+        "id": "mitochondria",
+        "entity_name": "MITOCHONDRIA",
+        "cosine_similarity": 0.7331871390342712
+      },
+      {
+        "id": "library",
+        "entity_name": "LIBRARY",
+        "cosine_similarity": 0.2846384048461914
+      }
+    ],
+    "llm_api_calls": 0
+  },
+  "short_samples": [
+    "How do mitochondria generate cellular energy?",
+    "Mitochondria produce ATP through oxidative phosphorylation to supply energy to cells.",
+    "The city council approved a plan to renovate the public library.",
+    "线粒体如何为细胞提供能量？",
+    "线粒体通过氧化磷酸化产生 ATP，为细胞活动提供能量。",
+    "市议会批准了公共图书馆的翻修计划。"
+  ],
+  "short_input_token_lengths": [
+    13,
+    24,
+    16,
+    12,
+    20,
+    14
+  ],
+  "similarities": {
+    "english_positive": 0.7331870794296265,
+    "english_negative": 0.2846384644508362,
+    "chinese_positive": 0.8025577068328857,
+    "chinese_negative": 0.26634424924850464,
+    "scope": "Handwritten smoke examples; not a retrieval benchmark or quality estimate"
+  },
+  "embedding_calls": 15,
+  "inputs_encoded": 20,
+  "full_rag_answering_executed": false,
+  "scope": "Real offline embeddings and all three upstream vector stores; no extraction, graph construction, LLM answering or research evaluation"
+}

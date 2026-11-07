@@ -1,0 +1,85 @@
+{
+  "id": "5a8c7595554299585d9e36b6",
+  "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+  "type": "bridge",
+  "reference_answer_for_posthoc_check_only": "Chief of Protocol",
+  "answer": "Shirley Temple portrayed Corliss Archer in *Kiss and Tell*. As an adult, she served as **Chief of Protocol of the United States**.",
+  "reference_phrase_present": true,
+  "elapsed_seconds": 6.7338,
+  "retrieval_mode": "hybrid",
+  "retrieval_keywords": [
+    "\"CORLISS ARCHER\", \"KISS AND TELL\", \"WOMAN WHO PORTRAYED CORLISS ARCHER\", \"GOVERNMENT POSITION\"",
+    "<hyperedge>\"The question asks which government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell.\", <hyperedge>\"The question refers to the woman who portrayed Corliss Archer in Kiss and Tell and asks about her government position.\""
+  ],
+  "serialized_context_tokens": 11502,
+  "retained_chunk_ids_by_full_text_match": [
+    "chunk-a122a45d412e52b9a44dccae257519d4",
+    "chunk-1059c7e3657801f3b2afc048793e5e0a",
+    "chunk-1f6ab9531b25e8293f2d2440430ab3a4",
+    "chunk-8d2ac9863b0d83b4de045fb6c20d1fcc",
+    "chunk-04deea65089655319880d457d6d5bd16",
+    "chunk-1b6ef89bd2d3246f0c1d96788e967fd3",
+    "chunk-467a9e91d360260857fb6582f1a4d722",
+    "chunk-2b512b80a4ef799bb6f8c1a44777a220",
+    "chunk-fd034e932805dfcddfcd004a92da9e33",
+    "chunk-390ded4876454dc390b7f7d4913087c7",
+    "chunk-70193bc69a5e8266573690f91b39c705",
+    "chunk-ba161436993d24719b1ef46d705909d3",
+    "chunk-5eaa2da9f0811b4525c4704d7ba4319f",
+    "chunk-609e59fdedc1c9976f238a886c2e3420",
+    "chunk-af38bb50332aa1669150d2677b15f944",
+    "chunk-a4d7633824ef13844b33a132478b36e7",
+    "chunk-deab7907e4dda2d33cf5a38e7bc1df85",
+    "chunk-dfd784dbb757421a8e9460fbb4167371",
+    "chunk-b467e5adf53d4b410c6567550fb8881b"
+  ],
+  "retained_source_titles": [
+    "A Kiss for Corliss",
+    "Adam Collis",
+    "Charles Craft",
+    "Conrad Brooks",
+    "Deliver Us from Evil (2014 film)",
+    "Doctor Strange (2016 film)",
+    "Ed Wood",
+    "Ed Wood (film)",
+    "Janet Waldo",
+    "Kiss and Tell (1945 film)",
+    "Lord High Treasurer",
+    "Meet Corliss Archer",
+    "Meet Corliss Archer (TV series)",
+    "Scott Derrickson",
+    "Secretary of State for Constitutional Affairs",
+    "Shirley Temple",
+    "Sinister (film)",
+    "Tyler Bates",
+    "Woodson, Arkansas"
+  ],
+  "reference_support_titles": [
+    "Kiss and Tell (1945 film)",
+    "Shirley Temple"
+  ],
+  "all_reference_titles_retrieved": true,
+  "supporting_sentence_checks": [
+    {
+      "title": "Kiss and Tell (1945 film)",
+      "sentence_index": 0,
+      "sentence": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.",
+      "present_in_actual_sources": true
+    },
+    {
+      "title": "Shirley Temple",
+      "sentence_index": 0,
+      "sentence": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938.",
+      "present_in_actual_sources": true
+    },
+    {
+      "title": "Shirley Temple",
+      "sentence_index": 1,
+      "sentence": " As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+      "present_in_actual_sources": true
+    }
+  ],
+  "all_supporting_sentences_in_sources": true,
+  "context_file": "context-5a8c7595554299585d9e36b6.txt",
+  "reference_phrase_check_is_not_official_exact_match": true
+}

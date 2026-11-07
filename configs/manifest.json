@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-11-05T19:11:38.561426+08:00",
+  "scope": "Standalone baseline inputs",
+  "files": [
+    {
+      "path": "configs/baseline.json",
+      "sha256": "9a11a7bc9b537758eecc188aa5fa3e4aca6894f030c557df4cc7e0cf66ca00bc"
+    },
+    {
+      "path": "configs/source-files.json",
+      "sha256": "de552c1f3dbef93dbb6e0847a7619ae60515162c94e91151c033f6f10ecf5b11"
+    },
+    {
+      "path": "configs/pilot.json",
+      "sha256": "3b9c038497233d7f7e93ae34f257df7a541a58e8f18e073d472eeb52fb05f32f"
+    },
+    {
+      "path": "environment/requirements-win-py311.lock.txt",
+      "sha256": "bf48e25e3185b468a9ab5a2ec40adc82fa32d684d8a3802526432a4575bc0aa8"
+    },
+    {
+      "path": "environment/installed-packages.json",
+      "sha256": "b63929595e50e1dadf0bc6da1ac3b63f825d42600c4fb63a22edcc10abd611d2"
+    },
+    {
+      "path": "models/bge-m3/manifest.json",
+      "sha256": "a84111ccd5adf26c171adad54a2101307c541b12c5970da1569977f787a264c5"
+    },
+    {
+      "path": "models/bge-m3/revision.json",
+      "sha256": "12b577f70fe23fd11d726b58b97b153105c7579ffb64ce13fd472e3d7e59e43a"
+    },
+    {
+      "path": ".python-version",
+      "sha256": "03520ee77719f14d31fd23cdbe29ea0e6dc6e7f181f8d8f99ef053500c192223"
+    }
+  ]
+}

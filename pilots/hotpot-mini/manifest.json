@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-11-05T16:59:44.956976+08:00",
+  "timezone": "Asia/Shanghai",
+  "source_local_path": "D:\\HyperGraph_skill\\validation\\ehrag-granularity\\data\\hotpot-dev-000-099.json",
+  "source_sha256": "d2d4806c1337dc8e60958ac06647c630716479695bac029336f0e8ae3ba2234b",
+  "upstream_dataset": "https://huggingface.co/datasets/hotpotqa/hotpot_qa",
+  "source_acquisition_url_recorded_by_previous_project": "https://datasets-server.huggingface.co/rows?dataset=hotpotqa/hotpot_qa&config=distractor&split=validation&offset=0&length=100",
+  "dataset_homepage": "https://hotpotqa.github.io/",
+  "dataset_license": "CC BY-SA 4.0",
+  "dataset_attribution": "Yang, Qi, Zhang et al. (2018), HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering; source paragraphs from Wikipedia",
+  "modifications": "Selected original rows 0 and 1; joined each original paragraph's title and sentences; retained every distractor paragraph",
+  "row_indices": [
+    0,
+    1
+  ],
+  "question_ids": [
+    "5a8b57f25542995d1e6f1371",
+    "5a8c7595554299585d9e36b6"
+  ],
+  "document_count": 20,
+  "question_count": 2,
+  "files": [
+    {
+      "path": "pilots/hotpot-mini/documents.json",
+      "sha256": "454938fe7d502272ee36e36cd5088bd65f1a279c1b71f3dcc2db897433d5ea3d"
+    },
+    {
+      "path": "pilots/hotpot-mini/questions.json",
+      "sha256": "346d7acdecb5d141d8ab25b4c1bf584201a1ee26c490a9911a6ccc622f9e90d6"
+    }
+  ]
+}

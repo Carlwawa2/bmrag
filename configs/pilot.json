@@ -1,0 +1,13 @@
+{
+  "name": "hotpot-mini-validation-000-001",
+  "baseline": "configs/baseline.json",
+  "selection": "First two rows in source order, all ten candidate paragraphs each; no answer-based document selection",
+  "corpus_mode": "Union of all candidate paragraphs for both queries; shared small graph",
+  "document_format": "Title + newline + original sentences joined without changes",
+  "llm_adapter": "Exception-safe semaphore at the frozen maximum concurrency; transient network/429/5xx failures retried once with unchanged requests",
+  "max_total_api_attempts": 120,
+  "max_attempts_per_call": 2,
+  "official_metrics_computed": false,
+  "evaluation_scope": "End-to-end engineering pilot only; exclude these question IDs from later held-out evaluation",
+  "baseline_config_sha256": "9a11a7bc9b537758eecc188aa5fa3e4aca6894f030c557df4cc7e0cf66ca00bc"
+}

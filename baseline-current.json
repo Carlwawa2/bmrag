@@ -1,0 +1,23 @@
+{
+  "baseline_id": "hypergraphrag-luna-bge-m3-cpu",
+  "configuration": "configs/baseline.json",
+  "entrypoint": "hgrag.runtime.make_rag",
+  "query_parameter_factory": "hgrag.runtime.make_query_param",
+  "command": "python -m hgrag",
+  "input_manifest": "configs/manifest.json",
+  "validation": "reports/baseline/validation.json",
+  "environment": "environment/README.md",
+  "dependency_lock": "environment/requirements-win-py311.lock.txt",
+  "runtime_validation": "reports/environment/validation.json",
+  "embedding_validation": "reports/embedding/validation.json",
+  "model_manifest": "models/bge-m3/manifest.json",
+  "end_to_end_validation": {
+    "report": "reports/hotpot-mini/REPORT.md",
+    "latest_run": "reports/hotpot-mini/latest-run.json",
+    "quality_review": "reports/hotpot-mini/review.json",
+    "run_directory": "artifacts/runs/pilot-001",
+    "documents": 20,
+    "questions": 2,
+    "formal_benchmark_evaluated": false
+  }
+}

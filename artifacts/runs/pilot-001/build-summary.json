@@ -1,0 +1,31 @@
+{
+  "documents": 20,
+  "chunks": 20,
+  "entity_nodes": 377,
+  "hyperedge_nodes": 268,
+  "incidence_edges": 600,
+  "hyperedge_cardinality_histogram": {
+    "0": 4,
+    "1": 127,
+    "2": 57,
+    "3": 37,
+    "4": 16,
+    "5": 10,
+    "6": 10,
+    "7": 3,
+    "8": 2,
+    "13": 1,
+    "24": 1
+  },
+  "hyperedges_with_at_least_three_entities": 80,
+  "bipartite_incidence_valid": true,
+  "source_links_valid": true,
+  "vector_counts": {
+    "entities_vdb": 377,
+    "hyperedges_vdb": 268,
+    "chunks_vdb": 20
+  },
+  "build_seconds": 122.14891059999354,
+  "config_sha256": "bc3e47632086b05da99d92e5a6b81ddd9ce777bda49749916188536af3be9b35",
+  "corpus_manifest_sha256": "b11bce865189dd9606dff0767ee316035c75d19f08077aea1d584911c2b10582"
+}

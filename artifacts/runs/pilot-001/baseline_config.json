@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "baseline_id": "hypergraphrag-controlled-v3-luna-bge-m3-cpu",
+  "source": {
+    "repository": "https://github.com/LHRLAB/HyperGraphRAG.git",
+    "commit": "e01d2f2a5f3d1e80415b933c10fa7d14587cf811",
+    "checkout": "upstream/HyperGraphRAG",
+    "package": "hypergraphrag",
+    "entrypoint": "bge_baseline.runtime.make_rag",
+    "variant": "root-package-quick-start"
+  },
+  "api": {
+    "provider": "OpenCode Go",
+    "service_root": "https://opencode.ai/inference/go",
+    "base_url": "https://opencode.ai/inference/go/openai/v1",
+    "models_url": "https://opencode.ai/inference/go/v1/models",
+    "api_key_environment_variable": "OPENCODE_API_KEY",
+    "timeout_seconds": 30
+  },
+  "models": {
+    "extraction": "gpt-6-luna",
+    "summarization": "gpt-6-luna",
+    "query_analysis": "gpt-6-luna",
+    "generation": "gpt-6-luna",
+    "embedding": {
+      "name": "BAAI/bge-m3",
+      "provider": "local",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "local_directory": "artifacts/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181",
+      "manifest": "models/bge-m3/manifest.json",
+      "manifest_sha256": "bacff13978748007a323ce7e7f9bbdfc8afb4776c01de7229a53f41fd8bfcc02",
+      "dimensions": 1024,
+      "max_input_tokens": 8192,
+      "device": "cpu",
+      "dtype": "float32",
+      "pooling": "cls",
+      "normalize": true,
+      "batch_size": 1,
+      "cpu_threads": 4,
+      "attention_implementation": "eager",
+      "overflow_policy": "error",
+      "query_prefix": "",
+      "document_prefix": "",
+      "preserve_generated_vectors": true
+    }
+  },
+  "rag": {
+    "kv_storage": "JsonKVStorage",
+    "vector_storage": "NanoVectorDBStorage",
+    "graph_storage": "NetworkXStorage",
+    "log_level": 20,
+    "chunk_token_size": 1200,
+    "chunk_overlap_token_size": 100,
+    "tiktoken_model_name": "gpt-4o-mini",
+    "entity_extract_max_gleaning": 2,
+    "entity_summary_to_max_tokens": 500,
+    "node_embedding_algorithm": "node2vec",
+    "node2vec_params": {
+      "dimensions": 1536,
+      "num_walks": 10,
+      "walk_length": 40,
+      "window_size": 2,
+      "iterations": 3,
+      "random_seed": 3
+    },
+    "embedding_batch_num": 1,
+    "embedding_func_max_async": 1,
+    "llm_model_name": "gpt-6-luna",
+    "llm_model_max_token_size": 32768,
+    "llm_model_max_async": 16,
+    "llm_model_kwargs": {
+      "reasoning_effort": "none",
+      "temperature": 0,
+      "top_p": 1,
+      "max_completion_tokens": 16384
+    },
+    "vector_db_storage_cls_kwargs": {},
+    "enable_llm_cache": false,
+    "embedding_cache_config": {
+      "enabled": false,
+      "similarity_threshold": 0.95,
+      "use_llm_check": false
+    },
+    "addon_params": {
+      "language": "English",
+      "entity_types": [
+        "organization",
+        "person",
+        "geo",
+        "event",
+        "category"
+      ],
+      "example_number": null
+    }
+  },
+  "retrieval": {
+    "mode": "hybrid",
+    "only_need_context": false,
+    "only_need_prompt": false,
+    "response_type": "Multiple Paragraphs",
+    "stream": false,
+    "top_k": 60,
+    "max_token_for_text_unit": 4000,
+    "max_token_for_global_context": 4000,
+    "max_token_for_local_context": 4000
+  },
+  "vector_search": {
+    "cosine_better_than_threshold": 0.2
+  },
+  "runtime": {
+    "python_target": "3.11",
+    "python_hash_seed": 42,
+    "local_random_seed": 42,
+    "artifact_root": "artifacts",
+    "dependencies_locked": true,
+    "api_execution_validated": true,
+    "embedding_validation_report": "baseline-v3/validation.json"
+  },
+  "budget_semantics": {
+    "exploration_budget_implemented": false,
+    "context_limits_are_upstream_section_limits": true,
+    "serialized_total_context_hard_limit": null
+  },
+  "provenance": {
+    "parent_baseline": "baseline-v2/config.json",
+    "parent_baseline_id": "hypergraphrag-controlled-v2-luna-opencode-go",
+    "requested_model": "gpt-6-luna",
+    "provider_confirmed_by_user": true,
+    "model_snapshot_listed_in_reviewed_docs": false,
+    "credentials_stored": false,
+    "embedding_migration": "Planned text-embedding-3-small API replaced by pinned local BGE-M3 dense embeddings"
+  }
+}

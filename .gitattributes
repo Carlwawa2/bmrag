@@ -1,0 +1,2 @@
+# Frozen input/artifact checksums depend on exact bytes across platforms.
+* -text whitespace=cr-at-eol

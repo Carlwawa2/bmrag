@@ -1,0 +1,38 @@
+[
+  {
+    "id": "5a8b57f25542995d1e6f1371",
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Scott Derrickson",
+        "Ed Wood"
+      ],
+      "sent_id": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "5a8c7595554299585d9e36b6",
+    "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+    "answer": "Chief of Protocol",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Kiss and Tell (1945 film)",
+        "Shirley Temple",
+        "Shirley Temple"
+      ],
+      "sent_id": [
+        0,
+        0,
+        1
+      ]
+    }
+  }
+]

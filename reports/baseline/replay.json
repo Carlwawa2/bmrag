@@ -1,0 +1,71 @@
+{
+  "verified_at": "2026-11-07T16:57:39.290485+08:00",
+  "status": "passed",
+  "configuration": "configs/baseline.json",
+  "config_sha256": "9a11a7bc9b537758eecc188aa5fa3e4aca6894f030c557df4cc7e0cf66ca00bc",
+  "scientific_settings_unchanged": true,
+  "baseline_run": "artifacts/runs/pilot-001/pilot-summary.json",
+  "evidence_files_unchanged": 93,
+  "graph": {
+    "documents": 20,
+    "chunks": 20,
+    "entity_nodes": 377,
+    "hyperedge_nodes": 268,
+    "incidence_edges": 600,
+    "hyperedge_cardinality_histogram": {
+      "0": 4,
+      "1": 127,
+      "2": 57,
+      "3": 37,
+      "4": 16,
+      "5": 10,
+      "6": 10,
+      "7": 3,
+      "8": 2,
+      "13": 1,
+      "24": 1
+    },
+    "hyperedges_with_at_least_three_entities": 80,
+    "bipartite_incidence_valid": true,
+    "source_links_valid": true,
+    "vector_counts": {
+      "entities_vdb": 377,
+      "hyperedges_vdb": 268,
+      "chunks_vdb": 20
+    }
+  },
+  "model_requests_replayed": [
+    {
+      "kind": "query_analysis",
+      "messages_and_parameters_exact_match": true
+    },
+    {
+      "kind": "generation",
+      "messages_and_parameters_exact_match": true
+    },
+    {
+      "kind": "query_analysis",
+      "messages_and_parameters_exact_match": true
+    },
+    {
+      "kind": "generation",
+      "messages_and_parameters_exact_match": true
+    }
+  ],
+  "answers": [
+    {
+      "id": "5a8b57f25542995d1e6f1371",
+      "answer_exact_match": true,
+      "actual_generation_request_exact_match": true
+    },
+    {
+      "id": "5a8c7595554299585d9e36b6",
+      "answer_exact_match": true,
+      "actual_generation_request_exact_match": true
+    }
+  ],
+  "live_llm_api_calls": 0,
+  "network_connections": 0,
+  "embedding_model": "Actual local BGE-M3, not a stub",
+  "scope": "Recompute retrieval and compare exact prompts, parameters and recorded answers; not a new live-LLM experiment"
+}

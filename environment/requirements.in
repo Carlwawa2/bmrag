@@ -1,0 +1,18 @@
+# Runtime profile: JsonKVStorage + NetworkXStorage + NanoVectorDBStorage.
+# The immutable, full upstream list remains in baseline/requirements.upstream.txt.
+# Unused database connectors, graph embeddings and evaluation extras are not enabled.
+torch==2.3.0
+numpy==1.26.4
+transformers==4.44.2
+openai>=1.54,<2
+nano-vectordb<0.1
+networkx>=3,<4
+tiktoken>=0.7,<1
+pydantic>=2,<3
+tenacity>=8,<10
+tqdm
+aioboto3
+aiohttp
+ollama
+accelerate
+xxhash

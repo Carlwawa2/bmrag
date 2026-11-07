@@ -1,0 +1,3 @@
+[submodule "upstream/HyperGraphRAG"]
+	path = upstream/HyperGraphRAG
+	url = https://github.com/LHRLAB/HyperGraphRAG.git

@@ -1,0 +1,34 @@
+{
+  "verified_at": "2026-11-05T19:16:56.868740+08:00",
+  "status": "passed",
+  "offline_verification": true,
+  "repository": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "files_verified": 13,
+  "total_bytes": 2295435813,
+  "manifest_sha256": "a84111ccd5adf26c171adad54a2101307c541b12c5970da1569977f787a264c5",
+  "python": "3.11.16",
+  "packages": {
+    "huggingface-hub": "0.36.2",
+    "transformers": "4.44.2",
+    "torch": "2.3.0+cpu",
+    "tokenizers": "0.19.1"
+  },
+  "checks": {
+    "offline_config_load": true,
+    "offline_fast_tokenizer_load": true,
+    "chinese_and_english_tokenization": true,
+    "weight_deserialization_weights_only": true,
+    "optional_head_deserialization_weights_only": true,
+    "parameter_tensor_count": 391,
+    "word_embedding_shape": [
+      250002,
+      1024
+    ],
+    "dimensions": 1024,
+    "max_input_tokens": 8192,
+    "pooling": "CLS",
+    "inference_executed": false,
+    "rag_integration_executed": false
+  }
+}

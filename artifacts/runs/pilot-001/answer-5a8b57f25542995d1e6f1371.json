@@ -1,0 +1,79 @@
+{
+  "id": "5a8b57f25542995d1e6f1371",
+  "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+  "type": "comparison",
+  "reference_answer_for_posthoc_check_only": "yes",
+  "answer": "Yes. Both Scott Derrickson and Ed Wood were American.",
+  "reference_phrase_present": true,
+  "elapsed_seconds": 4.8522,
+  "retrieval_mode": "hybrid",
+  "retrieval_keywords": [
+    "\"SCOTT DERRICKSON\", \"ED WOOD\"",
+    "<hyperedge>\"The text asks whether Scott Derrickson and Ed Wood shared the same nationality.\""
+  ],
+  "serialized_context_tokens": 10500,
+  "retained_chunk_ids_by_full_text_match": [
+    "chunk-a122a45d412e52b9a44dccae257519d4",
+    "chunk-1059c7e3657801f3b2afc048793e5e0a",
+    "chunk-1f6ab9531b25e8293f2d2440430ab3a4",
+    "chunk-8d2ac9863b0d83b4de045fb6c20d1fcc",
+    "chunk-04deea65089655319880d457d6d5bd16",
+    "chunk-1b6ef89bd2d3246f0c1d96788e967fd3",
+    "chunk-467a9e91d360260857fb6582f1a4d722",
+    "chunk-2b512b80a4ef799bb6f8c1a44777a220",
+    "chunk-fd034e932805dfcddfcd004a92da9e33",
+    "chunk-390ded4876454dc390b7f7d4913087c7",
+    "chunk-70193bc69a5e8266573690f91b39c705",
+    "chunk-ba161436993d24719b1ef46d705909d3",
+    "chunk-5eaa2da9f0811b4525c4704d7ba4319f",
+    "chunk-609e59fdedc1c9976f238a886c2e3420",
+    "chunk-af38bb50332aa1669150d2677b15f944",
+    "chunk-a4d7633824ef13844b33a132478b36e7",
+    "chunk-deab7907e4dda2d33cf5a38e7bc1df85",
+    "chunk-dfd784dbb757421a8e9460fbb4167371",
+    "chunk-b467e5adf53d4b410c6567550fb8881b"
+  ],
+  "retained_source_titles": [
+    "A Kiss for Corliss",
+    "Adam Collis",
+    "Charles Craft",
+    "Conrad Brooks",
+    "Deliver Us from Evil (2014 film)",
+    "Doctor Strange (2016 film)",
+    "Ed Wood",
+    "Ed Wood (film)",
+    "Janet Waldo",
+    "Kiss and Tell (1945 film)",
+    "Lord High Treasurer",
+    "Meet Corliss Archer",
+    "Meet Corliss Archer (TV series)",
+    "Scott Derrickson",
+    "Secretary of State for Constitutional Affairs",
+    "Shirley Temple",
+    "Sinister (film)",
+    "Tyler Bates",
+    "Woodson, Arkansas"
+  ],
+  "reference_support_titles": [
+    "Ed Wood",
+    "Scott Derrickson"
+  ],
+  "all_reference_titles_retrieved": true,
+  "supporting_sentence_checks": [
+    {
+      "title": "Scott Derrickson",
+      "sentence_index": 0,
+      "sentence": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+      "present_in_actual_sources": true
+    },
+    {
+      "title": "Ed Wood",
+      "sentence_index": 0,
+      "sentence": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+      "present_in_actual_sources": true
+    }
+  ],
+  "all_supporting_sentences_in_sources": true,
+  "context_file": "context-5a8b57f25542995d1e6f1371.txt",
+  "reference_phrase_check_is_not_official_exact_match": true
+}

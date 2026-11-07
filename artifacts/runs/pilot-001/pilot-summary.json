@@ -1,0 +1,626 @@
+{
+  "started_at": "2026-11-05T17:51:17.618991+08:00",
+  "run_name": "hotpot-mini-20261105-01",
+  "status": "passed",
+  "baseline_id": "hypergraphrag-controlled-v3-luna-bge-m3-cpu",
+  "config_sha256": "bc3e47632086b05da99d92e5a6b81ddd9ce777bda49749916188536af3be9b35",
+  "baseline_manifest_sha256": "1f0806086e577743af2a30618b9bb651fad93262f0df7adf9379857648d19109",
+  "corpus_manifest_sha256": "b11bce865189dd9606dff0767ee316035c75d19f08077aea1d584911c2b10582",
+  "policy": {
+    "name": "hotpot-mini-validation-000-001",
+    "baseline": "baseline-v3/config.json",
+    "baseline_manifest_sha256": "1f0806086e577743af2a30618b9bb651fad93262f0df7adf9379857648d19109",
+    "selection": "First two rows in source order, all ten candidate paragraphs each; no answer-based document selection",
+    "corpus_mode": "Union of all candidate paragraphs for both queries; shared small graph",
+    "document_format": "Title + newline + original sentences joined without changes",
+    "llm_adapter": "Exception-safe semaphore at the frozen maximum concurrency; transient network/429/5xx failures retried once with unchanged requests",
+    "max_total_api_attempts": 120,
+    "max_attempts_per_call": 2,
+    "official_metrics_computed": false,
+    "evaluation_scope": "End-to-end engineering pilot only; exclude these question IDs from later held-out evaluation"
+  },
+  "credential_persisted": false,
+  "script_files": [
+    {
+      "path": "pilot/__init__.py",
+      "sha256": "89420c45d355013c47c58383b72388650513aae42e95511ed924a54c3c8b0cf1"
+    },
+    {
+      "path": "pilot/prepare.py",
+      "sha256": "aac7e0e2ddeb9225aefe729c3a3acba1f1374a24aecc7d0d4679f8876953ebd4"
+    },
+    {
+      "path": "pilot/run.py",
+      "sha256": "bdcab2e3518cb25d6685cf1c35b3b4ef2c19ed2c93e110f2b9f202318a8cce05"
+    }
+  ],
+  "answers": [
+    {
+      "id": "5a8b57f25542995d1e6f1371",
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "type": "comparison",
+      "reference_answer_for_posthoc_check_only": "yes",
+      "answer": "Yes. Both Scott Derrickson and Ed Wood were American.",
+      "reference_phrase_present": true,
+      "elapsed_seconds": 4.8522,
+      "retrieval_mode": "hybrid",
+      "retrieval_keywords": [
+        "\"SCOTT DERRICKSON\", \"ED WOOD\"",
+        "<hyperedge>\"The text asks whether Scott Derrickson and Ed Wood shared the same nationality.\""
+      ],
+      "serialized_context_tokens": 10500,
+      "retained_chunk_ids_by_full_text_match": [
+        "chunk-a122a45d412e52b9a44dccae257519d4",
+        "chunk-1059c7e3657801f3b2afc048793e5e0a",
+        "chunk-1f6ab9531b25e8293f2d2440430ab3a4",
+        "chunk-8d2ac9863b0d83b4de045fb6c20d1fcc",
+        "chunk-04deea65089655319880d457d6d5bd16",
+        "chunk-1b6ef89bd2d3246f0c1d96788e967fd3",
+        "chunk-467a9e91d360260857fb6582f1a4d722",
+        "chunk-2b512b80a4ef799bb6f8c1a44777a220",
+        "chunk-fd034e932805dfcddfcd004a92da9e33",
+        "chunk-390ded4876454dc390b7f7d4913087c7",
+        "chunk-70193bc69a5e8266573690f91b39c705",
+        "chunk-ba161436993d24719b1ef46d705909d3",
+        "chunk-5eaa2da9f0811b4525c4704d7ba4319f",
+        "chunk-609e59fdedc1c9976f238a886c2e3420",
+        "chunk-af38bb50332aa1669150d2677b15f944",
+        "chunk-a4d7633824ef13844b33a132478b36e7",
+        "chunk-deab7907e4dda2d33cf5a38e7bc1df85",
+        "chunk-dfd784dbb757421a8e9460fbb4167371",
+        "chunk-b467e5adf53d4b410c6567550fb8881b"
+      ],
+      "retained_source_titles": [
+        "A Kiss for Corliss",
+        "Adam Collis",
+        "Charles Craft",
+        "Conrad Brooks",
+        "Deliver Us from Evil (2014 film)",
+        "Doctor Strange (2016 film)",
+        "Ed Wood",
+        "Ed Wood (film)",
+        "Janet Waldo",
+        "Kiss and Tell (1945 film)",
+        "Lord High Treasurer",
+        "Meet Corliss Archer",
+        "Meet Corliss Archer (TV series)",
+        "Scott Derrickson",
+        "Secretary of State for Constitutional Affairs",
+        "Shirley Temple",
+        "Sinister (film)",
+        "Tyler Bates",
+        "Woodson, Arkansas"
+      ],
+      "reference_support_titles": [
+        "Ed Wood",
+        "Scott Derrickson"
+      ],
+      "all_reference_titles_retrieved": true,
+      "supporting_sentence_checks": [
+        {
+          "title": "Scott Derrickson",
+          "sentence_index": 0,
+          "sentence": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+          "present_in_actual_sources": true
+        },
+        {
+          "title": "Ed Wood",
+          "sentence_index": 0,
+          "sentence": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+          "present_in_actual_sources": true
+        }
+      ],
+      "all_supporting_sentences_in_sources": true,
+      "context_file": "context-5a8b57f25542995d1e6f1371.txt",
+      "reference_phrase_check_is_not_official_exact_match": true
+    },
+    {
+      "id": "5a8c7595554299585d9e36b6",
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "type": "bridge",
+      "reference_answer_for_posthoc_check_only": "Chief of Protocol",
+      "answer": "Shirley Temple portrayed Corliss Archer in *Kiss and Tell*. As an adult, she served as **Chief of Protocol of the United States**.",
+      "reference_phrase_present": true,
+      "elapsed_seconds": 6.7338,
+      "retrieval_mode": "hybrid",
+      "retrieval_keywords": [
+        "\"CORLISS ARCHER\", \"KISS AND TELL\", \"WOMAN WHO PORTRAYED CORLISS ARCHER\", \"GOVERNMENT POSITION\"",
+        "<hyperedge>\"The question asks which government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell.\", <hyperedge>\"The question refers to the woman who portrayed Corliss Archer in Kiss and Tell and asks about her government position.\""
+      ],
+      "serialized_context_tokens": 11502,
+      "retained_chunk_ids_by_full_text_match": [
+        "chunk-a122a45d412e52b9a44dccae257519d4",
+        "chunk-1059c7e3657801f3b2afc048793e5e0a",
+        "chunk-1f6ab9531b25e8293f2d2440430ab3a4",
+        "chunk-8d2ac9863b0d83b4de045fb6c20d1fcc",
+        "chunk-04deea65089655319880d457d6d5bd16",
+        "chunk-1b6ef89bd2d3246f0c1d96788e967fd3",
+        "chunk-467a9e91d360260857fb6582f1a4d722",
+        "chunk-2b512b80a4ef799bb6f8c1a44777a220",
+        "chunk-fd034e932805dfcddfcd004a92da9e33",
+        "chunk-390ded4876454dc390b7f7d4913087c7",
+        "chunk-70193bc69a5e8266573690f91b39c705",
+        "chunk-ba161436993d24719b1ef46d705909d3",
+        "chunk-5eaa2da9f0811b4525c4704d7ba4319f",
+        "chunk-609e59fdedc1c9976f238a886c2e3420",
+        "chunk-af38bb50332aa1669150d2677b15f944",
+        "chunk-a4d7633824ef13844b33a132478b36e7",
+        "chunk-deab7907e4dda2d33cf5a38e7bc1df85",
+        "chunk-dfd784dbb757421a8e9460fbb4167371",
+        "chunk-b467e5adf53d4b410c6567550fb8881b"
+      ],
+      "retained_source_titles": [
+        "A Kiss for Corliss",
+        "Adam Collis",
+        "Charles Craft",
+        "Conrad Brooks",
+        "Deliver Us from Evil (2014 film)",
+        "Doctor Strange (2016 film)",
+        "Ed Wood",
+        "Ed Wood (film)",
+        "Janet Waldo",
+        "Kiss and Tell (1945 film)",
+        "Lord High Treasurer",
+        "Meet Corliss Archer",
+        "Meet Corliss Archer (TV series)",
+        "Scott Derrickson",
+        "Secretary of State for Constitutional Affairs",
+        "Shirley Temple",
+        "Sinister (film)",
+        "Tyler Bates",
+        "Woodson, Arkansas"
+      ],
+      "reference_support_titles": [
+        "Kiss and Tell (1945 film)",
+        "Shirley Temple"
+      ],
+      "all_reference_titles_retrieved": true,
+      "supporting_sentence_checks": [
+        {
+          "title": "Kiss and Tell (1945 film)",
+          "sentence_index": 0,
+          "sentence": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.",
+          "present_in_actual_sources": true
+        },
+        {
+          "title": "Shirley Temple",
+          "sentence_index": 0,
+          "sentence": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938.",
+          "present_in_actual_sources": true
+        },
+        {
+          "title": "Shirley Temple",
+          "sentence_index": 1,
+          "sentence": " As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+          "present_in_actual_sources": true
+        }
+      ],
+      "all_supporting_sentences_in_sources": true,
+      "context_file": "context-5a8c7595554299585d9e36b6.txt",
+      "reference_phrase_check_is_not_official_exact_match": true
+    }
+  ],
+  "official_metrics_computed": false,
+  "scope": "Two preselected development questions and 20 candidate paragraphs; engineering check, not formal benchmark performance",
+  "graph": {
+    "documents": 20,
+    "chunks": 20,
+    "entity_nodes": 377,
+    "hyperedge_nodes": 268,
+    "incidence_edges": 600,
+    "hyperedge_cardinality_histogram": {
+      "0": 4,
+      "1": 127,
+      "2": 57,
+      "3": 37,
+      "4": 16,
+      "5": 10,
+      "6": 10,
+      "7": 3,
+      "8": 2,
+      "13": 1,
+      "24": 1
+    },
+    "hyperedges_with_at_least_three_entities": 80,
+    "bipartite_incidence_valid": true,
+    "source_links_valid": true,
+    "vector_counts": {
+      "entities_vdb": 377,
+      "hyperedges_vdb": 268,
+      "chunks_vdb": 20
+    },
+    "build_seconds": 122.14891059999354,
+    "config_sha256": "bc3e47632086b05da99d92e5a6b81ddd9ce777bda49749916188536af3be9b35",
+    "corpus_manifest_sha256": "b11bce865189dd9606dff0767ee316035c75d19f08077aea1d584911c2b10582"
+  },
+  "graph_reloaded_and_verified": true,
+  "finished_at": "2026-11-05T17:53:31.549858+08:00",
+  "elapsed_seconds": 133.9314,
+  "api_attempt_count": 81,
+  "model_call_kinds": {
+    "extraction": 20,
+    "gleaning_or_loop_check": 56,
+    "query_analysis": 2,
+    "generation": 2
+  },
+  "usage_from_successful_response_audits": {
+    "input_tokens": 390957,
+    "output_tokens": 34528,
+    "total_tokens": 425485
+  },
+  "successful_response_audit_files": 80,
+  "evidence_files": [
+    {
+      "path": "answer-5a8b57f25542995d1e6f1371.json",
+      "sha256": "14a14fa57d6b2ba37cdb4632d2ac287efe5aabd0c8f7baf3e772fed5f1db19ed"
+    },
+    {
+      "path": "answer-5a8c7595554299585d9e36b6.json",
+      "sha256": "f2e46cbb6a4bc58abdfd0cd5173318db927b163672174444940774f75ede9467"
+    },
+    {
+      "path": "baseline_config.json",
+      "sha256": "bc3e47632086b05da99d92e5a6b81ddd9ce777bda49749916188536af3be9b35"
+    },
+    {
+      "path": "build-summary.json",
+      "sha256": "c8cab90cf5fe88e21ef4b9e89c0a0cbfa09a7bbf9391e393a350c85dff7a90c6"
+    },
+    {
+      "path": "context-5a8b57f25542995d1e6f1371.txt",
+      "sha256": "9a1a0162603b9c24c137e16cf5c1733d809a619891f4d6c94bea06f4ad95ec5c"
+    },
+    {
+      "path": "context-5a8c7595554299585d9e36b6.txt",
+      "sha256": "5e901638cbb712ccf24db44464732ab47e19e064cf687fa092e9670c9791f3e1"
+    },
+    {
+      "path": "graph_chunk_entity_relation.graphml",
+      "sha256": "68cb2f0eae6bce695270cca80addc0b8f91872c45c83b4cc064048af398fe8d6"
+    },
+    {
+      "path": "kv_store_full_docs.json",
+      "sha256": "ac29bd21495abc3def1103ccce801c38dc092cfc6a399c0a299c58a7e202b6f0"
+    },
+    {
+      "path": "kv_store_text_chunks.json",
+      "sha256": "82878aed4be7d6fe378036b10645314b4136b68310d6e419584ea19210cc381e"
+    },
+    {
+      "path": "model_calls/20261105T095125-e48add6520.json",
+      "sha256": "e8c3a3b7b162d2a350a5f8c6612c3253636304e7ba3e577564d362926bf4a2bc"
+    },
+    {
+      "path": "model_calls/20261105T095126-50c3fe0e99.json",
+      "sha256": "31de13c3906ebd5ecfba2ef527427a1c5049eb3f954866734926f73bc524703b"
+    },
+    {
+      "path": "model_calls/20261105T095127-3cfd931118.json",
+      "sha256": "c48d52165a0c4ad4b9b80ca9d7160609db26ca243d24434715da5f5a1ce7f395"
+    },
+    {
+      "path": "model_calls/20261105T095127-4ba02cf7fe.json",
+      "sha256": "5744e82207975e83c8303b0e8ad6fbbb6e8824206532c8b5b01647ee4dc8bce8"
+    },
+    {
+      "path": "model_calls/20261105T095127-5bbc65bd2f.json",
+      "sha256": "0e0db08c1ab214d227ada9b442a67fa8c94d803cf8c9171a34362d5384972b68"
+    },
+    {
+      "path": "model_calls/20261105T095127-65c2251a9e.json",
+      "sha256": "784e4d1b058a9bb2fefc95ec036a6a26203aa394e16014d85bb4d74d3183b426"
+    },
+    {
+      "path": "model_calls/20261105T095127-c5b7a24a03.json",
+      "sha256": "60d752cce41d84fc12619f4f5851648ab14e5ef74605cccb28263a5d5f34dce9"
+    },
+    {
+      "path": "model_calls/20261105T095128-10e2c89144.json",
+      "sha256": "e7e803c92f5f085b1b77d0e3031430bdc347689c4afe353b9401f835cf9f694d"
+    },
+    {
+      "path": "model_calls/20261105T095128-59c93e9c52.json",
+      "sha256": "6022a603fd7fe6e2145467ea6e02fd3f4c04902f195d196123f40491fa185edc"
+    },
+    {
+      "path": "model_calls/20261105T095129-b9d4dd2ffe.json",
+      "sha256": "bf1d3be1f1188b55867657cd187863473737ab701ca04bec9e5483278eac308f"
+    },
+    {
+      "path": "model_calls/20261105T095129-e572510721.json",
+      "sha256": "83813629ae3aa65c472615802d14b4d3f975862f15c45d4c78616dc698533593"
+    },
+    {
+      "path": "model_calls/20261105T095130-3087ec5675.json",
+      "sha256": "e0cd3a2d1e23cff7e6c114465a33f4e3289766c61d711f26fe7d6967582b40d3"
+    },
+    {
+      "path": "model_calls/20261105T095130-77fc241ff2.json",
+      "sha256": "aac43e774324a550776679a8f5c00426b29e096c95b18e960d98648e35249b88"
+    },
+    {
+      "path": "model_calls/20261105T095131-0a3d5ffb75.json",
+      "sha256": "ced18d43925fb5859e29f5d4721c1488268ce4f1fb03e8f92d53211085391933"
+    },
+    {
+      "path": "model_calls/20261105T095131-ab864fd84f.json",
+      "sha256": "042d01cc0e5e4bdfc86815fbb84695bac43d3714525e585bb1058565e5dc040e"
+    },
+    {
+      "path": "model_calls/20261105T095131-bcc706fccb.json",
+      "sha256": "9eecad874210d633fa156cc68e21bcf53651758dc116fe212ad25d6da1cef988"
+    },
+    {
+      "path": "model_calls/20261105T095132-0af08b13d3.json",
+      "sha256": "15af541e0fc5eef1ffedd9e8669e24908d8b3902b4e0440280c60439bd1e8eb3"
+    },
+    {
+      "path": "model_calls/20261105T095132-297cc50ad6.json",
+      "sha256": "4980f588a83a103565ba20dc78d2f2f97ad32970ff6cbbc3063b617bab082285"
+    },
+    {
+      "path": "model_calls/20261105T095132-3044e3cfe2.json",
+      "sha256": "544a9438b91242d4804756a473d11bce3f2bcb61e5481d55ade62bedce5571df"
+    },
+    {
+      "path": "model_calls/20261105T095132-8aac3ea915.json",
+      "sha256": "df201438fee4d88d3989359061ea9b84cd838ec352ea99cf84b9f91bed6c0acf"
+    },
+    {
+      "path": "model_calls/20261105T095134-4425ce57ac.json",
+      "sha256": "38f16607151a2b5d24a6190d40da1cc1c9954876816f21a839675996599dc528"
+    },
+    {
+      "path": "model_calls/20261105T095134-7da2458757.json",
+      "sha256": "6d8c573a1e95a5201f23f2ad775e67660111b4bc04edfd855b9940cbcb95ce9c"
+    },
+    {
+      "path": "model_calls/20261105T095134-e7b02e3aee.json",
+      "sha256": "180b11d8d466a945f228f4d51b03b3517d13e1dd8f79384fba9d9931edb03134"
+    },
+    {
+      "path": "model_calls/20261105T095135-85d5735d70.json",
+      "sha256": "91def309019557b8d597788d99aad931d9dc476a0f61b0b69def5cb381924e7f"
+    },
+    {
+      "path": "model_calls/20261105T095136-0980940703.json",
+      "sha256": "cdeb6d19a1fd7c2dac8d103eff505e1f22b3e080dad0ec1181263fca14f93189"
+    },
+    {
+      "path": "model_calls/20261105T095136-0baab2fa2d.json",
+      "sha256": "628bbdd65cb24ad6f814f40e00356d913db135339805c72139d952685a6f20f4"
+    },
+    {
+      "path": "model_calls/20261105T095136-1edbf927fe.json",
+      "sha256": "8e33def2b39646b3fedabbf76958a2321c644bd8f4c5b307aae7442bb6ecf049"
+    },
+    {
+      "path": "model_calls/20261105T095136-472387a0fe.json",
+      "sha256": "4958d3b8b306a100fe0b0adb4b4f87abd434b9b72d233233885c7b92e7861651"
+    },
+    {
+      "path": "model_calls/20261105T095137-8b9aeb3d33.json",
+      "sha256": "18228d2639ffba5bcb6dfaf656d97168772bf9a408b84af06042d0d256e4394f"
+    },
+    {
+      "path": "model_calls/20261105T095137-db8f989389.json",
+      "sha256": "2a80fab591bd4d01a56683f507f179d83ebf7037898f1e6e89178913b70b4216"
+    },
+    {
+      "path": "model_calls/20261105T095137-fbfbe6d86a.json",
+      "sha256": "d585ac6d9569c4735554ca80cff1237de49b87944a48c6acdbe887a1c4c463e9"
+    },
+    {
+      "path": "model_calls/20261105T095138-67a475d126.json",
+      "sha256": "90a98a71080cb6778c5bdb5be598cf46bbd2378929de0407cb0f339c50951787"
+    },
+    {
+      "path": "model_calls/20261105T095138-bbc9319254.json",
+      "sha256": "5efdb8231d39371420e8cc085e67a4dfb93450b32cd41f721de3cb7f7c8ece2f"
+    },
+    {
+      "path": "model_calls/20261105T095138-cb7c496d57.json",
+      "sha256": "8e03cba03053df7c3ae48387517a68a3ad04df0a8457bcc832f01ca0be65a3ed"
+    },
+    {
+      "path": "model_calls/20261105T095138-ceb83949bb.json",
+      "sha256": "392ef74ca5fa815471a9b70394d5f93bfa75681b42c649dcaa8db53676652cff"
+    },
+    {
+      "path": "model_calls/20261105T095138-f29fd6895c.json",
+      "sha256": "27d95bec4b12255880e21e5ed6ca463d049511b5e7336ea81f997d882370b6ac"
+    },
+    {
+      "path": "model_calls/20261105T095139-7943848d58.json",
+      "sha256": "bc306ef05c369524d6aaf4806657f59064d67d9c7e72fdc10f4b8a418f84f3ac"
+    },
+    {
+      "path": "model_calls/20261105T095139-b7b16cf748.json",
+      "sha256": "576273c823a69c9b5e1cb482cef59fa1fde8f2ec45e419ed4524a2a7632834f0"
+    },
+    {
+      "path": "model_calls/20261105T095139-e2fcf5e7a6.json",
+      "sha256": "673a18d8cf987733f7e2c648aca5affddafad6134029552393da7f2ff23d3bf5"
+    },
+    {
+      "path": "model_calls/20261105T095140-b5f775583a.json",
+      "sha256": "45208b8b6aa5c2bab84a9845df9ddffa0d25970f8198cf3d3a6ade0c01d7fbb5"
+    },
+    {
+      "path": "model_calls/20261105T095140-cc9564edd8.json",
+      "sha256": "9d1faa3378171eb3ad0c2e53a9bb6f19ca54627dcf8583cc6b4a88c05bf36106"
+    },
+    {
+      "path": "model_calls/20261105T095141-2d43231462.json",
+      "sha256": "b586249f12287fd18add9f3750072e6fcd735bcdda46a8545a6a6a0c598760af"
+    },
+    {
+      "path": "model_calls/20261105T095141-5a91d33736.json",
+      "sha256": "847f2d3981ec8546b2b01a4faf39291b52d9fd747c3704ed5a36caad46944880"
+    },
+    {
+      "path": "model_calls/20261105T095141-663bff4425.json",
+      "sha256": "29c96a4b416b817ecd7a9a7a4ba542ac2dcdb9352543186f74cb19c5e909d748"
+    },
+    {
+      "path": "model_calls/20261105T095141-71c2f4f36e.json",
+      "sha256": "e64d737f0fa58c3d8e9cc0350da2f9e06beb0b50b114a0e87698a8dbac4c20b5"
+    },
+    {
+      "path": "model_calls/20261105T095141-93eba3c294.json",
+      "sha256": "a7feff9b11622600977d3443e5c507a832453bc4e3c38279a46871659ad19711"
+    },
+    {
+      "path": "model_calls/20261105T095141-b41f138c56.json",
+      "sha256": "d13061f9d3c6e9419e2e6639d10f1e00454ecb3f82babd0b34738499bbc6cb94"
+    },
+    {
+      "path": "model_calls/20261105T095142-5e59cfcca7.json",
+      "sha256": "0e34ac196735c4f0501378c4be867ac11df6efff9e67b1b7266d7ca54d438f8e"
+    },
+    {
+      "path": "model_calls/20261105T095142-7023118164.json",
+      "sha256": "867013f4bd718057558b2b44ddeb491b4a347ba50bf7080f71eb71635025b942"
+    },
+    {
+      "path": "model_calls/20261105T095142-71a5916fe4.json",
+      "sha256": "5ffb91900ec6438cd2a2e98b9802be5c9895ef39b0f309a3945bfe4863f2d36f"
+    },
+    {
+      "path": "model_calls/20261105T095142-af89b3a6f6.json",
+      "sha256": "df79edfe5af7c3e017bbd8772dbb5b099a4097912b69405c04e9faed2768d813"
+    },
+    {
+      "path": "model_calls/20261105T095142-fac4030c89.json",
+      "sha256": "8db3c33c85bbc47f5e64061be9f4b7d21c7e2e519cc5e550af532f5773b9a57a"
+    },
+    {
+      "path": "model_calls/20261105T095143-66b820355c.json",
+      "sha256": "fc62048d350b5b033bd86d272c790d53ad0ec68a060608da452c709acbc2465c"
+    },
+    {
+      "path": "model_calls/20261105T095143-cbe4586afd.json",
+      "sha256": "23f4a9909ca37bc9c6c8aa9b07faa9b5c744c2b6eecffa54e7904a9fbca84f6d"
+    },
+    {
+      "path": "model_calls/20261105T095143-d186a432a0.json",
+      "sha256": "b496ad5b7523c83d180bb245195786693fc6de46aefe02f4485e4bf031a691f7"
+    },
+    {
+      "path": "model_calls/20261105T095144-eda0f1485b.json",
+      "sha256": "09ca83c133466a92f586a9a3b7e135569736226a1c4959e40b6df41cc9f26ddf"
+    },
+    {
+      "path": "model_calls/20261105T095145-3532be1716.json",
+      "sha256": "77a3bd545eda4b8dffee587f91d87e58caed5f0fcb07f9d2c773b0a69dc9844a"
+    },
+    {
+      "path": "model_calls/20261105T095145-bcb2f0339a.json",
+      "sha256": "48819074d5f461dd89664a07081dd65e1c97c1c40d23c8bf6f08691b3cf68b62"
+    },
+    {
+      "path": "model_calls/20261105T095146-0f3ec3daa3.json",
+      "sha256": "3a9e5133be1a2f884f8e8cbf7e61096bed93d22d137a976043a07e020bf28c58"
+    },
+    {
+      "path": "model_calls/20261105T095147-165a6cb327.json",
+      "sha256": "577d9f8c560ba97c38210c0c2741d6b8ab285d0a1b5a89d71afa4169689fcb10"
+    },
+    {
+      "path": "model_calls/20261105T095147-f166719483.json",
+      "sha256": "b757bdf727256ab828b41d98de4743356c54d70bab59c41f696a773728ab7154"
+    },
+    {
+      "path": "model_calls/20261105T095148-714fe79ca6.json",
+      "sha256": "dee9d66511b6e55eb6c53e39ee805a49a17a33e5798030edf6bf73725ab0b027"
+    },
+    {
+      "path": "model_calls/20261105T095148-7416ff333c.json",
+      "sha256": "36af916098e7c69d060448261b8b97d91bc4021db1536fcc25e2e688fd0dd108"
+    },
+    {
+      "path": "model_calls/20261105T095148-bcdfaad7d0.json",
+      "sha256": "b3ad9b11252c2c2a31a61c06974415fc1f53d59e971d1b60e497e26126b35748"
+    },
+    {
+      "path": "model_calls/20261105T095149-f1ef8f081f.json",
+      "sha256": "89b1fa3ab812818eadbf83aaed37a0d165e8788a7ef7773bb4da00a626cd6f1e"
+    },
+    {
+      "path": "model_calls/20261105T095150-5e340b4123.json",
+      "sha256": "ae45e18dc7245c0e1be896a80a245ad5cc8ca65f1c11a5271fb8296dc1d15b06"
+    },
+    {
+      "path": "model_calls/20261105T095152-37afe744ed.json",
+      "sha256": "0bea7a2431b2c34b0f7fc5b129875057e25245d5c1680c91a7cc7980e25b7f75"
+    },
+    {
+      "path": "model_calls/20261105T095153-c6ad1ddba6.json",
+      "sha256": "3c6dd765814bbdfc63172247283b056443f92a80e3b239bc3c3c72f38203bcb5"
+    },
+    {
+      "path": "model_calls/20261105T095155-56eaee117b.json",
+      "sha256": "33e9d7dc881caf24617240a740b6b63fbdbcb1092b245a61f029e643e018326f"
+    },
+    {
+      "path": "model_calls/20261105T095155-901eda7153.json",
+      "sha256": "a6977ca28a0eb3186decb6429dd3ee4db6d060983c821fe4952577e86dd9a4bb"
+    },
+    {
+      "path": "model_calls/20261105T095159-fd33a591aa.json",
+      "sha256": "32d9382e97b48c8d8f715232c768f35a45fef49658acc3964653e9f68a619fe7"
+    },
+    {
+      "path": "model_calls/20261105T095200-7913c592db.json",
+      "sha256": "f121387fbced27a5be58a1fc766f6bebd8ce7f5b53e303f8c8b589be32be9732"
+    },
+    {
+      "path": "model_calls/20261105T095210-7382c6b141.json",
+      "sha256": "bf52504c921ee1d81a351fe8acdf29593809e739bbfebff227852cf0130a80b8"
+    },
+    {
+      "path": "model_calls/20261105T095215-f06d34476f.json",
+      "sha256": "c828a4952082813bb5380c46d19a4679070d36623d66c9b234a71020d7231e0a"
+    },
+    {
+      "path": "model_calls/20261105T095217-982d811bb8.json",
+      "sha256": "b31dca7bcfe00411e6084358b4515d98769fe2ad3cfb68f38f9c6a550dc5d3ab"
+    },
+    {
+      "path": "model_calls/20261105T095224-1fd3111af8.json",
+      "sha256": "5ef7c56728410f02c39ca6a04b46fffcaa037b021514d5288716143ba3b86a47"
+    },
+    {
+      "path": "model_calls/20261105T095322-b86325c470.json",
+      "sha256": "23fc826808bfa18fe1da0228eeb267bcaf7c8e89e45c4f76efaf0b74bd6e6fbe"
+    },
+    {
+      "path": "model_calls/20261105T095324-9faf40c34c.json",
+      "sha256": "682613966284ad4860d754a85a875b6a8b719ef03a0071f8333989a79178bfa8"
+    },
+    {
+      "path": "model_calls/20261105T095329-62caa724b1.json",
+      "sha256": "5a4d8e06cf9e13d86baa79b6677ae9c6611de8c0bd88aedae88a3c946b80cee6"
+    },
+    {
+      "path": "model_calls/20261105T095331-6f2d61937f.json",
+      "sha256": "409ad40c55f64f116d218eaf541842cba8dabf9a568c375fe004e54fb90038dd"
+    },
+    {
+      "path": "pilot-calls.json",
+      "sha256": "928934fa2e8dbb728a37e0cfae8e5b95cd5d53bfa4b2a2adefaf35287a1889e6"
+    },
+    {
+      "path": "vdb_chunks.json",
+      "sha256": "f61904eeeb66b7065a4053f0503643df2281baf0764ab2893725922185c918b9"
+    },
+    {
+      "path": "vdb_entities.json",
+      "sha256": "7dbf2558ad4410b3643c3b93983db9c6d9fceec9887bf70911c0d83f2e8f348f"
+    },
+    {
+      "path": "vdb_hyperedges.json",
+      "sha256": "e953bd784119137731b0d0c72a0c0de25806f64a8055cd5013684af3a52a5dd8"
+    }
+  ]
+}

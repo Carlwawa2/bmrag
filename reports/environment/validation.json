@@ -1,0 +1,43 @@
+{
+  "validated_at": "2026-11-07T16:57:35.531166+08:00",
+  "timezone": "Asia/Shanghai",
+  "passed": true,
+  "python_version": "3.11.16",
+  "python_executable": "D:\\step_1\\.venv\\Scripts\\python.exe",
+  "base_interpreter": "D:\\step_1\\artifacts\\toolchain\\python\\cpython-3.11.16-windows-x86_64-none",
+  "virtual_environment": "D:\\step_1\\.venv",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "architecture": "AMD64",
+  "source_commit": "e01d2f2a5f3d1e80415b933c10fa7d14587cf811",
+  "source_import_path": "D:\\step_1\\upstream\\HyperGraphRAG\\hypergraphrag\\__init__.py",
+  "baseline_id": "hypergraphrag-luna-bge-m3-cpu",
+  "package_count": 65,
+  "torch_version": "2.3.0+cpu",
+  "numpy_version": "1.26.4",
+  "cpu_runtime": true,
+  "checks": {
+    "isolated_python_311": true,
+    "active_profile_integrity": true,
+    "pinned_upstream_import": true,
+    "upstream_sdk_imports": true,
+    "transformers_imports": true,
+    "unified_query_param_factory": true,
+    "numpy_torch_interop": true,
+    "installed_versions_match_lock": true,
+    "kv_roundtrip": true,
+    "graphml_roundtrip": true,
+    "vector_query_and_roundtrip": true,
+    "real_model_calls": 0,
+    "stub_calls": {
+      "llm": 0,
+      "embedding_stub": 4
+    }
+  },
+  "lock_file": "environment/requirements-win-py311.lock.txt",
+  "lock_sha256": "bf48e25e3185b468a9ab5a2ec40adc82fa32d684d8a3802526432a4575bc0aa8",
+  "installed_packages_sha256": "b63929595e50e1dadf0bc6da1ac3b63f825d42600c4fb63a22edcc10abd611d2",
+  "scope": "Selected local storage backend and imported LLM/embedding dependencies; optional backends excluded.",
+  "local_embedding_configured": true,
+  "tokenizer_data_prefetched": true,
+  "full_rag_experiment_started": false
+}

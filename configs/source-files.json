@@ -1,0 +1,267 @@
+[
+  {
+    "path": "upstream/HyperGraphRAG/.gitignore",
+    "normalization": "lf",
+    "sha256": "50c55daaa4e5f4c5fdd871bef4432db2b6c3c4db8aa76622826928e5fb5ac744"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/LICENSE",
+    "normalization": "none",
+    "sha256": "ba6ad89c6869bac9bf487b792b27aaabaea18fd86842d448c839307e0fd6fc3d"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/README.md",
+    "normalization": "lf",
+    "sha256": "16907db44b8c1eca76bee50411302a117803f2d003b32a95c2754523138dd5bc"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/README.md",
+    "normalization": "lf",
+    "sha256": "d02bbd471726d86afd26868e78d983bcd99a71c30c4cafc9c20fc9f754c9770c"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/eval.py",
+    "normalization": "lf",
+    "sha256": "f5a5416f9a912da20dd6aa36eafa8c541218d7be9c56c0bc1227c6bbce311c7a"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/eval_g.py",
+    "normalization": "lf",
+    "sha256": "15e7ebe0ca11c2a5578c3d20c3b16fd9aac0c2313fbc6cfb4bbd3f57e86a3c88"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/eval_r.py",
+    "normalization": "lf",
+    "sha256": "10c79cb977f5f1bbd29cc9c7b2e31b2a6baca5946286e6095a0708376c79afcf"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/get_generation.py",
+    "normalization": "lf",
+    "sha256": "a2b8c4218226974e63c67ad025ebbf25aa2c5e36d5738e8372f63213001a7151"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/get_score.py",
+    "normalization": "lf",
+    "sha256": "8d7b5b87c243d8f477e476f2674b9a3f1a6bc9ff2f9a79527511b1abbb97bd38"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/__init__.py",
+    "normalization": "lf",
+    "sha256": "42db2a734b8c565ead8ea7d84f1422226dba430674d2e28e124b8656c8a02103"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/base.py",
+    "normalization": "lf",
+    "sha256": "66c868bca6556d5742a44bdbf403da9f7c7a5cae9ed027c5a57b62fe98ecc01d"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/hypergraphrag.py",
+    "normalization": "lf",
+    "sha256": "f0ba71a747490c0ac20c730812664edd5430a2cc58484f254df0b110b6bb67ae"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/kg/__init__.py",
+    "normalization": "lf",
+    "sha256": "fbd3eff0946b1cd66087d6a8ced0d073e050b053fa70e082af6769923565a202"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/kg/chroma_impl.py",
+    "normalization": "lf",
+    "sha256": "b9aaf16bda1a7155c1ccc42e41439be3c0ff9edb81dd4e48f09a8be4a782774d"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/kg/milvus_impl.py",
+    "normalization": "lf",
+    "sha256": "a1d491c90faf98ee9e0c6e0747c04f841aa0827a0169b2be0811f366f768a6d8"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/kg/mongo_impl.py",
+    "normalization": "lf",
+    "sha256": "c37b8ba5582216c3c3986eabe7bdc02e9b33f99e2f9de941523041323517c5bf"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/kg/neo4j_impl.py",
+    "normalization": "lf",
+    "sha256": "8c26260a07953da3387592b63b8049eb302a31845b75fae7ab27cff55f688078"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/kg/oracle_impl.py",
+    "normalization": "lf",
+    "sha256": "e44e57dfaa692f7583eda2dd6033006b4ec91fe30b7fc0493d29dc8666405ced"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/kg/tidb_impl.py",
+    "normalization": "lf",
+    "sha256": "fa9dd0fceab7e699facbb4c13f536267cff7acff751a9131d873203e7f75feb8"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/llm.py",
+    "normalization": "lf",
+    "sha256": "9ccd21a0bf4bf59bc2f5d92baec764b86d5d2fa8d485e45d94f585715adb3bfa"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/operate.py",
+    "normalization": "lf",
+    "sha256": "5ec591946dc7949c02e5466f406e73046486e6d47344e3ff997fcf53c4212f3c"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/prompt.py",
+    "normalization": "lf",
+    "sha256": "2730b18d849641d9dedafad2374034bd5ed90d403402a1991ea0596e869b085e"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/storage.py",
+    "normalization": "lf",
+    "sha256": "42c270938b33169cbacb85415a43dc32e0e3cf459e4485b5f09ff11fce5e4669"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/hypergraphrag/utils.py",
+    "normalization": "lf",
+    "sha256": "a0f09d1562b218fb4040e8089cc648e050d280b50f716f2edc3f41d4b37bad21"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/script_hypergraphrag.py",
+    "normalization": "lf",
+    "sha256": "44d26d04347022658e88b7baab689ef27ac958715431cd8d6cb166c75d4722d3"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/script_insert.py",
+    "normalization": "lf",
+    "sha256": "2d6676a0e40ec7587c7fc93eab824cc46b58ad3c2dd4fac5765c9600b597bdfc"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/script_naivegeneration.py",
+    "normalization": "lf",
+    "sha256": "fa36212831d0bb7f9059c0c96babcab1155b9041b24e849cf5a174406db9d89f"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/script_standardrag.py",
+    "normalization": "lf",
+    "sha256": "32afb81ed2489e5cbfc723004e7c6d69467d6652a738a92dfa0f38a6e8b5a11c"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/see_score.py",
+    "normalization": "lf",
+    "sha256": "5bc3791d56ee04ce9b1913af192b0a464b3e5d1d216a5485b466502d669cfa9a"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/simcse/__init__.py",
+    "normalization": "lf",
+    "sha256": "2097983559a56e9c331220d4d068b876eef3879a0186562f4ae067767991f116"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/simcse/models.py",
+    "normalization": "lf",
+    "sha256": "4f415ed61aa103eeae95118c1de44d964a94d83cb70b7adf5d743ba4420c67ce"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/simcse/tool.py",
+    "normalization": "lf",
+    "sha256": "bbf459a223a30e0e23781631999b960a16265058dfd05b5d5acff480be16b261"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/evaluation/simcse/trainers.py",
+    "normalization": "lf",
+    "sha256": "9f66dae69dadc747f7b92ba32a83af488c32d995105008ca57288ea1c6e28865"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/example_contexts.json",
+    "normalization": "lf",
+    "sha256": "66fdc5362aa44e06ce418678a7f275da5dc621a088d4866228f0299942f1ef6f"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/figs/F1.png",
+    "normalization": "none",
+    "sha256": "258479837e393ecabf0e1dca9495df79a1de65703185a7fe8313f79404068a35"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/__init__.py",
+    "normalization": "lf",
+    "sha256": "42db2a734b8c565ead8ea7d84f1422226dba430674d2e28e124b8656c8a02103"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/base.py",
+    "normalization": "lf",
+    "sha256": "66c868bca6556d5742a44bdbf403da9f7c7a5cae9ed027c5a57b62fe98ecc01d"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/hypergraphrag.py",
+    "normalization": "lf",
+    "sha256": "2b1c49dd201232706705526dfe16d55a451b7b8a63837aea8e9978a6b56cfc79"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/kg/__init__.py",
+    "normalization": "lf",
+    "sha256": "fbd3eff0946b1cd66087d6a8ced0d073e050b053fa70e082af6769923565a202"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/kg/chroma_impl.py",
+    "normalization": "lf",
+    "sha256": "b9aaf16bda1a7155c1ccc42e41439be3c0ff9edb81dd4e48f09a8be4a782774d"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/kg/milvus_impl.py",
+    "normalization": "lf",
+    "sha256": "a1d491c90faf98ee9e0c6e0747c04f841aa0827a0169b2be0811f366f768a6d8"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/kg/mongo_impl.py",
+    "normalization": "lf",
+    "sha256": "c37b8ba5582216c3c3986eabe7bdc02e9b33f99e2f9de941523041323517c5bf"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/kg/neo4j_impl.py",
+    "normalization": "lf",
+    "sha256": "8c26260a07953da3387592b63b8049eb302a31845b75fae7ab27cff55f688078"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/kg/oracle_impl.py",
+    "normalization": "lf",
+    "sha256": "e44e57dfaa692f7583eda2dd6033006b4ec91fe30b7fc0493d29dc8666405ced"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/kg/tidb_impl.py",
+    "normalization": "lf",
+    "sha256": "fa9dd0fceab7e699facbb4c13f536267cff7acff751a9131d873203e7f75feb8"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/llm.py",
+    "normalization": "lf",
+    "sha256": "5ed7e61d3d8695410000b6bd24facee90e727c6ffe6e6cb4adef47a26e75c25b"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/operate.py",
+    "normalization": "lf",
+    "sha256": "1302a1599fc3b98b9c1bbcbccf9553a093a048985fb36855c3d5e0a4a3da4160"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/prompt.py",
+    "normalization": "lf",
+    "sha256": "2730b18d849641d9dedafad2374034bd5ed90d403402a1991ea0596e869b085e"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/storage.py",
+    "normalization": "lf",
+    "sha256": "42c270938b33169cbacb85415a43dc32e0e3cf459e4485b5f09ff11fce5e4669"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/hypergraphrag/utils.py",
+    "normalization": "lf",
+    "sha256": "a0f09d1562b218fb4040e8089cc648e050d280b50f716f2edc3f41d4b37bad21"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/requirements.txt",
+    "normalization": "lf",
+    "sha256": "aa23b7af2655ddd9df037520df2423a688f0b1242c3fa085f3554c6421adf0d3"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/script_construct.py",
+    "normalization": "lf",
+    "sha256": "523aed466ccf9dd7c68fc6bdd56d94210701a577a4ad2a8f4eb0e8c73fd48d90"
+  },
+  {
+    "path": "upstream/HyperGraphRAG/script_query.py",
+    "normalization": "lf",
+    "sha256": "e76e7e8b1ff66c7dece2cbc618eae07b6f410416301db35ced42e75667335cc4"
+  }
+]
