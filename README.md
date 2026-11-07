@@ -33,7 +33,7 @@
 上游源码以固定提交的 Git 子模块保存，需要同时克隆子模块：
 
 ```powershell
-git -c core.autocrlf=false clone --recurse-submodules https://github.com/Carlwawa2/bmrag.git
+git -c core.autocrlf=true clone --recurse-submodules https://github.com/Carlwawa2/bmrag.git
 Set-Location bmrag
 $env:PYTHONHASHSEED = '42'
 ```
@@ -46,9 +46,9 @@ python -m hgrag environment --restore
 .\.venv\Scripts\python.exe -B -m hgrag prepare-tokenizer
 ```
 
-`.venv`、约 2.30 GB 的 BGE-M3 文件、Python 下载缓存和本地回退恢复包不纳入 Git。模型文件通过已提交的 revision 与校验值重新下载；原始小规模验收产物和基线源码快照已纳入仓库。`.gitattributes` 保持文件原始字节，避免换行转换破坏固定输入的哈希。
+`.venv`、约 2.30 GB 的 BGE-M3 文件、Python 下载缓存和本地回退恢复包不纳入 Git。模型文件通过已提交的 revision 与校验值重新下载；原始小规模验收产物和基线源码快照已纳入仓库。主工程的 `.gitattributes` 保持文件原始字节，避免换行转换破坏固定输入的哈希。克隆命令为上游子模块启用原 Windows 验收使用的 CRLF 换行，匹配已固定的许可证文件校验值。
 
-如果普通克隆时漏掉子模块，执行 `git -c core.autocrlf=false submodule update --init --recursive`。
+如果普通克隆时漏掉子模块，执行 `git -c core.autocrlf=true submodule update --init --recursive`。
 
 ### 检查已有基线
 
